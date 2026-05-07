@@ -1,18 +1,18 @@
-\# 🧠 Student Depression Prediction
+# 🧠 Student Depression Prediction
 
 
 
-\## 🌐 Live Demo
+## 🌐 Live Demo
 
-👉 \[Click here to try the app](https://student-depression-prediction-ckgym2pcykuprbh9xehlb4.streamlit.app/)
-
-
-
-\---
+👉 [Click here to try the app](https://student-depression-prediction-ckgym2pcykuprbh9xehlb4.streamlit.app/)
 
 
 
-\## 📌 Project Overview
+---
+
+
+
+## 📌 Project Overview
 
 
 
@@ -28,35 +28,35 @@ confidence score.
 
 
 
-\---
+---
 
 
 
-\## 📂 Dataset
+## 📂 Dataset
 
 
 
-\- \*\*Source:\*\* \[Student Depression Dataset - Kaggle](https://www.kaggle.com/datasets/hopesb/student-depression-dataset/data)
+- **Source:** [Student Depression Dataset - Kaggle](https://www.kaggle.com/datasets/hopesb/student-depression-dataset/data)
 
-\- \*\*Total Rows:\*\* 27,901
+- **Total Rows:** 27,901
 
-\- \*\*Total Columns:\*\* 18
+- **Total Columns:** 18
 
-\- \*\*Target Variable:\*\* Depression (0 = No Depression, 1 = Depression)
+- **Target Variable:** Depression (0 = No Depression, 1 = Depression)
 
-\- \*\*Class Distribution:\*\* 58.5% Depression, 41.5% No Depression
-
-
-
-\---
+- **Class Distribution:** 58.5% Depression, 41.5% No Depression
 
 
 
-\## ✅ Features Used
+---
 
 
 
-\### Numerical Features
+## ✅ Features Used
+
+
+
+### Numerical Features
 
 | Feature | Description |
 
@@ -74,7 +74,7 @@ confidence score.
 
 
 
-\### Categorical Features
+### Categorical Features
 
 | Feature | Values |
 
@@ -90,61 +90,61 @@ confidence score.
 
 
 
-\---
+---
 
 
 
-\## 🔬 Methodology
+## 🔬 Methodology
 
 
 
-\### 1. Exploratory Data Analysis (EDA)
+### 1. Exploratory Data Analysis (EDA)
 
-\- Analyzed class distribution of target variable
+- Analyzed class distribution of target variable
 
-\- Used histplots with proportion fill for numerical features
+- Used histplots with proportion fill for numerical features
 
-\- Used crosstab with normalize='index' for categorical features
+- Used crosstab with normalize='index' for categorical features
 
-\- Analyzed mean values per class for numerical features
+- Analyzed mean values per class for numerical features
 
-\- Checked correlation matrix for multicollinearity
-
-
-
-\### 2. Feature Selection
-
-\- Dropped identifier column (id)
-
-\- Dropped columns with near zero variance (Work Pressure, Job Satisfaction)
-
-\- Dropped columns with no signal (CGPA, Gender, City, Profession, Degree)
-
-\- Kept features with strong data signal AND real world relevance
+- Checked correlation matrix for multicollinearity
 
 
 
-\### 3. Data Preprocessing
+### 2. Feature Selection
 
-\- Handled 3 missing values in Financial Stress by dropping rows
+- Dropped identifier column (id)
 
-\- Removed invalid categories (Others) from Sleep Duration and Dietary Habits
+- Dropped columns with near zero variance (Work Pressure, Job Satisfaction)
 
-\- Applied StandardScaler on numerical features
+- Dropped columns with no signal (CGPA, Gender, City, Profession, Degree)
 
-\- Applied OrdinalEncoder with correct category order on ordinal features
-
-\- Applied binary mapping (Yes=1, No=0) on binary features
-
-\- Used ColumnTransformer with remainder='passthrough' for clean pipeline
+- Kept features with strong data signal AND real world relevance
 
 
 
-\### 4. Model Building
+### 3. Data Preprocessing
 
-\- Established DummyClassifier baseline (F1 = 0.5841)
+- Handled 3 missing values in Financial Stress by dropping rows
 
-\- Trained and compared 7 models:
+- Removed invalid categories (Others) from Sleep Duration and Dietary Habits
+
+- Applied StandardScaler on numerical features
+
+- Applied OrdinalEncoder with correct category order on ordinal features
+
+- Applied binary mapping (Yes=1, No=0) on binary features
+
+- Used ColumnTransformer with remainder='passthrough' for clean pipeline
+
+
+
+### 4. Model Building
+
+- Established DummyClassifier baseline (F1 = 0.5841)
+
+- Trained and compared 7 models:
 
 &#x20; - Logistic Regression
 
@@ -160,39 +160,39 @@ confidence score.
 
 &#x20; - Gradient Boosting
 
-\- Used 5-fold cross validation with F1 scoring
+- Used 5-fold cross validation with F1 scoring
 
-\- Monitored both Train and Validation F1
-
-
-
-\### 5. Hyperparameter Tuning
-
-\- Selected top 3 models based on validation F1 and consistency
-
-\- Used GridSearchCV with cv=5 and f1 scoring
-
-\- Tuned Logistic Regression, SVM and Gradient Boosting
+- Monitored both Train and Validation F1
 
 
 
-\### 6. Final Model
+### 5. Hyperparameter Tuning
 
-\- Retrained best model (Logistic Regression) on full dataset
+- Selected top 3 models based on validation F1 and consistency
 
-\- Saved using joblib
+- Used GridSearchCV with cv=5 and f1 scoring
 
-
-
-\---
+- Tuned Logistic Regression, SVM and Gradient Boosting
 
 
 
-\## 📊 Model Performance
+### 6. Final Model
+
+- Retrained best model (Logistic Regression) on full dataset
+
+- Saved using joblib
 
 
 
-\### Model Comparison
+---
+
+
+
+## 📊 Model Performance
+
+
+
+### Model Comparison
 
 | Model | Train F1 | Validation F1 | Verdict |
 
@@ -216,11 +216,11 @@ confidence score.
 
 
 
-\### Then we checked the test scores and based on that Logistic Regression was chosen
+### Then we checked the test scores and based on that Logistic Regression was chosen
 
 
 
-\### Final Model Results (Logistic Regression)
+### Final Model Results (Logistic Regression)
 
 | Metric | Score |
 
@@ -240,11 +240,11 @@ confidence score.
 
 
 
-\---
+---
 
 
 
-\## 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 
 
@@ -268,21 +268,20 @@ confidence score.
 
 
 
-\---
+---
 
 
 
-\## ⚠️ Limitations
+## ⚠️ Limitations
 
 
 
-\- Dataset is limited to student population — may not generalize to other groups
+- Dataset is limited to student population — may not generalize to other groups
 
-\- Depression is a complex medical condition — this model should not be used as a substitute for professional medical diagnosis
+- Depression is a complex medical condition — this model should not be used as a substitute for professional medical diagnosis
 
-\- Model is based on synthetic dataset which may contain bias
+- Model is based on synthetic dataset which may contain bias
 
-\- Model achieves 90% recall but still misses 10% of depression
-
+- Model achieves 90% recall but still misses 10% of depression
 &#x20; cases — real world deployment requires human expert validation
 
