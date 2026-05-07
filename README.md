@@ -1,15 +1,5 @@
 \# 🧠 Student Depression Prediction
 
-
-
-!\[Python](https://img.shields.io/badge/Python-3.8+-blue)
-
-!\[Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange)
-
-!\[Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
-
-
-
 \## 🌐 Live Demo
 
 👉 \[Click here to try the app](https://student-depression-prediction-ckgym2pcykuprbh9xehlb4.streamlit.app/)
