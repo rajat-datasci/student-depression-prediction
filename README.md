@@ -14,6 +14,17 @@ A machine learning web application that predicts the likelihood of depression in
 
 ---
 
+## Project Structure
+
+```
+├── app.py                                    # Streamlit frontend
+├── project notebook.ipynb                    # Full training pipeline 
+├── depression_model.pkl                      # Trained model
+└── requirements.txt                          # Dependencies
+```
+
+---
+
 ## 📂 Dataset
 
 - **Source:** \[Student Depression Dataset - Kaggle](https://www.kaggle.com/datasets/hopesb/student-depression-dataset/data)
