@@ -151,3 +151,9 @@ A machine learning web application that predicts the likelihood of depression in
 - Depression is a complex medical condition — this model should not be used as a substitute for professional medical diagnosis
 - Model is based on synthetic dataset which may contain bias
 - Model achieves 90% recall but still misses 10% of depression cases — real world deployment requires human expert validation
+
+---
+
+## Author
+
+Rajat — [GitHub](https://github.com/rajat-datasci)
