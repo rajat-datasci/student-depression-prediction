@@ -4,11 +4,6 @@
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
 
-## 🌐 Live Demo
-👉 [Click here to try the app](https://student-depression-prediction-ckgym2pcykuprbh9xehlb4.streamlit.app/)
-
----
-
 ## 📌 Project Overview
 A machine learning web application that predicts the likelihood of depression in students based on their lifestyle, academic, and personal factors. The app takes user inputs and instantly predicts whether a student is likely to be depressed or not, along with a confidence score.
 
@@ -33,6 +28,18 @@ A machine learning web application that predicts the likelihood of depression in
 - **Target Variable:** Depression (0 = No Depression, 1 = Depression)
 - **Class Distribution:** 58.5% Depression, 41.5% No Depression
 
+---
+
+## 🌐 Live Demo
+👉 [Click here to try the app](https://student-depression-prediction-ckgym2pcykuprbh9xehlb4.streamlit.app/)
+
+## Running Locally
+```bash
+git clone https://github.com/rajat-datasci/student-depression-prediction.git
+cd student-depression-prediction
+pip install -r requirements.txt
+streamlit run app.py
+```
 ---
 
 ## ✅ Features Used
